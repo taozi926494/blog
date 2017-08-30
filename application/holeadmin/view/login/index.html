@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<style>
+		#loginDiv {
+			width: 700px;
+			height: 330px;
+			border: 2px solid rgba(119, 119, 119, 0.55);
+			margin: 10% auto;
+			border-radius: 5px;
+			letter-spacing: 5px;
+		}
+		#loginDiv .title {
+			width: 95%;
+			height: 45px;
+			line-height: 45px;
+			font-size: 20px;
+			margin: 0 auto;
+			border-bottom: 1px solid rgba(119, 119, 119, 0.48)
+		}
+		#loginDiv .input-area {
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+		#loginDiv .input-row {
+			width: 85%;
+			height: 50px;
+			line-height: 50px;
+			margin: 0 auto;
+		}
+		#loginDiv .input-row input {
+			width: 350px;
+			height: 25px;
+		}
+		#loginDiv .input-row span {
+			width: 80px;
+			padding-right: 5px;
+			text-align: right;
+			display: inline-block;
+		}
+		#loginDiv .login-btn {
+			display: block;
+			text-align: center;
+			line-height: 40px;
+			width: 300px;
+			height: 40px;
+			background-color: rgba(6,96,187, 1.0);
+			color: #fff;
+			border: none;
+			border-radius: 3px;
+			margin: 20px auto;
+			cursor: pointer;
+		}
+		#loginDiv .login-btn:hover {
+			background-color: rgba(6,96,187, 0.9);
+		}
+	</style>
+</head>
+<body>
+	<div id="loginDiv">
+		<div class="title">
+			请登录
+		</div>
+		<div class="input-area">
+			<div class="input-row">
+				<span>登录名</span> <input type="text">
+			</div>
+		</div>
+		<div class="input-area">
+			<div class="input-row">
+				<span>密码</span> <input type="text">
+			</div>
+		</div>
+		<a class="login-btn">登 录</a>
+	</div>
+</body>
+</html>
