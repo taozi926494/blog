@@ -17,7 +17,7 @@ return [
     // 应用命名空间
     'app_namespace'          => 'app',
     // 应用调试模式
-    'app_debug'              => false,
+    'app_debug'              => true,
     // 应用Trace
     'app_trace'              => false,
     // 应用模式状态
@@ -238,4 +238,9 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+    //域名及公有url配置
+    'url' => [
+        'domain' => '/blog',
+        'static' => '/public/static'
+    ]
 ];

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin</title>
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+	<link rel="stylesheet" href="/blog/public/static/css/common.css">
+
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<style>
+		header{
+			width: 100%;
+			height: 60px;
+			border-bottom: 2px solid rgba(6,96,187, 1.0);
+			/*background: -webkit-gradient(top, red, rgba(0,154,97, 1.0) )*/
+			background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(6,96,187, 0.7)), to(rgba(6,96,187, 1.0)));
+		}
+		#left_tree{
+			width:250px;
+			padding: 5px;
+			float: left;
+			border-right: 1px solid #d3d3d3;
+			border-bottom: 1px solid #d3d3d3;
+		}
+		.left-tree{
+			width: 100%;
+			padding: 10px 20px 0 20px;
+		}
+		.left-tree li{
+			width:100%;
+			position: relative;
+			height: 50px;
+			text-align: center;
+			cursor: pointer;
+			line-height: 60px;
+			border-bottom: 1px solid #d3d3d3;
+			font-weight: 700;
+			letter-spacing: 10px;
+			color: #5d5d5d;
+		}
+		.left-tree li:last-child{
+			border-bottom: none;
+		}
+		.left-tree li:hover{
+			color: #ff3d3d;
+		}
+		#content{
+			width: 100%;
+			padding-left: 280px;
+			padding-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<header></header>
+	<div id="container" class="clearfloat">
+		<div id="left_tree">
+			<ul class="left-tree">
+				<li><a href="#">文章管理</a></li>
+				<li><a href="#">分类管理</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			afasfsf
+		</div>
+	</div>
+
+</body>
+</html>
