@@ -3,6 +3,7 @@ namespace app\holeadmin\controller;
 
 class Category {
 	public function index() {
+		header("Access-Control-Allow-Origin: *");
 		$categoryData = array(
 		  array(
 		    "id" => 1,
@@ -43,5 +44,10 @@ class Category {
 		);
 
 		return json($categoryData);
+	}
+
+	public function addDad() {
+		header("Access-Control-Allow-Origin: *");
+		
 	}
 }
